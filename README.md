@@ -51,7 +51,7 @@ This script performs the following image processings.<br>
 2 Create 512x512 square images corresponding to the mask files 
 from the original image files in <b>images/</b> folder
 </pre>
-The created <bHippocampus-base</b> dataset has the following folder structure.<br>
+The created <b>Ovarian-Tumor-master</b> dataset has the following folder structure.<br>
 
 <pre>
 ./Ovarian-Tumor-master
