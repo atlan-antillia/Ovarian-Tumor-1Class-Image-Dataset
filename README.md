@@ -21,7 +21,6 @@ MMOTU : google drive (move OTU_2d and OTU_3d to data folder. Here, OTU_3d folder
 </pre>
 
 
-
 <h3>2. Download master dataset</h3>
 Please download the original OTU_2d dataset from the following google drive.
 <a href="https://drive.google.com/drive/folders/1c5n0fVKrM9-SZE1kacTXPt1pt844iAs1?usp=sharing">
@@ -48,7 +47,7 @@ This script performs the following image processings.<br>
 <pre>
 1 Create 512x512 square masks from the original img files in <b>annotations</b>. 
 2 Create 512x512 square images corresponding to the mask files from the original image files in <b>images/</b> folder.
-3 Create rotated, flipped and mirrored masks and images from the 512x512 files.
+3 Create rotated, flipped and mirrored masks and images from the 512x512 square files.
 </pre>
 The created <b>Ovarian-Tumor-master</b> dataset has the following folder structure.<br>
 
