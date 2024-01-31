@@ -1,4 +1,4 @@
-<h2>Ovarian-Tumor-1Class-Image-Dataset (2024/01/30)</h2>
+<h2>Ovarian-Tumor-1Class-Image-Dataset (Updated: 2024/01/31)</h2>
 This is an Ovarian Tumor 1Class dataset for Image Segmentation and Object Detection.<br>  
 
 <h3>1. Dataset Citatioin</h3>
@@ -42,14 +42,13 @@ The images folder contains 1469 JPG image files, and annotations mask files resp
 Please run Python script <a href="./generator/ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a>.
 to create augmented jpg image and mask files.<br>
 <pre>
->python create_base_dataset_512x512.py
+>python ImageMaskDatasetGenerator.py
 </pre>
 This script performs the following image processings.<br>
 <pre>
 1 Create 512x512 square masks from the original img files in <b>annotations</b>. 
-
-2 Create 512x512 square images corresponding to the mask files 
-from the original image files in <b>images/</b> folder
+2 Create 512x512 square images corresponding to the mask files from the original image files in <b>images/</b> folder.
+3 Create rotated, flipped and mirrored masks and images from the 512x512 files.
 </pre>
 The created <b>Ovarian-Tumor-master</b> dataset has the following folder structure.<br>
 
@@ -65,7 +64,7 @@ The created <b>Ovarian-Tumor-master</b> dataset has the following folder structu
 3.2 Split master dataset to test, train and valid 
 </h3>
 By using Python script <a href="./generator/split_master.py">split_master.py</a>,
- we have finally created <b>Hippocampus-ImageMask-Dataset</b> dataset from the <b>Hippocampus-base</b>.<br>
+ we have finally created <b>Ovarian-Tumor-1Class-ImageMask-Dataset</b> dataset from the <b>Ovarian-Tumor-master</b>.<br>
 <pre>
 ./Ovarian-Tumor-1Class-ImageMask-Dataset
 ├─test
@@ -86,6 +85,14 @@ By using Python script <a href="./generator/split_master.py">split_master.py</a>
 <img src="./asset/train_sample_masks.png"  width="1024" height="auto">
 <br>
 <br>
+<img src="./_Ovarian-Tumor-1Class-ImageMask-Dataset_.png">
+<br>
+You can download this ImageMaskDataset from the googole drive 
+<a href="https://drive.google.com/file/d/1LU7bOmxcZfEBqv3s1RGxYwMNtE4rLPeA/view?usp=sharing">
+Ovarian-Tumor-1Class-ImageMask-Dataset.zip</a>
+
+
+
 <h3>
 4.Generate Annotation file
 </h3>

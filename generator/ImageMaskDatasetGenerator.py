@@ -29,7 +29,7 @@
 # 2023/07/28
 # ImageMaskDatasetGenerator.py
 # 2023/07/30 Modified ANGLES
-
+# 2024/01/31 Modified resize to be 512 from 256
 
 import os
 import glob
@@ -178,8 +178,10 @@ if __name__ == "__main__":
     input_images_dir = "./OTU_2d/images/"
     input_masks_dir  = "./OTU_2d/annotations/"
     output_dir = "./Ovarian-Tumor-master"
-    
-    generator = ImageMaskDatasetGenerator()
+    # 2024/01/31
+    SIZE = 512
+    generator = ImageMaskDatasetGenerator(resize=SIZE)
+
     generator.create(input_images_dir, input_masks_dir, output_dir, debug=False)
 
   except:

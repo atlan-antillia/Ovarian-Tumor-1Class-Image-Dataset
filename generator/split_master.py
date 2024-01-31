@@ -49,7 +49,9 @@ import traceback
 import random
 
 def split_master(images_dir, masks_dir, output_dir):
-  image_files = glob.glob(images_dir + "/*.JPG")
+  #image_files = glob.glob(images_dir + "/*.JPG")
+  image_files = glob.glob(images_dir + "/*.jpg")
+
   random.shuffle(image_files)
   num = len(image_files)
   num_train = int(num * 0.8)
